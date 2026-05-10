@@ -1,6 +1,0 @@
-﻿  c语言学习.c
-F:\code\c语言\c语言学习.c(135,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
-      F:\code\c语言\c语言学习.c(135,9):
-      请考虑在格式字符串中使用“%zd”
-  
-  c语言.vcxproj -> F:\code\c语言\x64\Debug\c语言.exe
