@@ -90,6 +90,7 @@ int main()
 //	return 0;
 //
 //}
+
  /*循环：while语句，for语句，do...while*/
 //int main()
 //{
@@ -110,6 +111,7 @@ int main()
 //	}
 //	return 0;
 //}
+
 //函数；
 //int ADD(int, int);
 //int main()
@@ -125,6 +127,7 @@ int main()
 //{
 //	return (x + y);
 //}
+
 //数组
 //在线oj--online judge,很多互联网公司在笔试环节都采用oj的形式；
 //1：IO型，所有的代码都是自己完成（输入，计算，输出）；
@@ -137,8 +140,9 @@ int main()
 //	数组现在允许数组的大小是常量，arr[3], 也允许初始化；
 //		当数组大小是变量时，不能初始化，int a = 3;arr[a]={}(错误)；
 //}
-int main()
-{
+//int main()
+//{
+
 //操作符：
 //1重点 / 除法：除号两端都是整数的时候，执行的是整数除法，结果是前面的整数（int）如果两端只要有一个是浮点数就执行浮点数的除法
 //int a = 7 / 2(a = 3); float b = 7 / 2.0; (b = 3.5);
@@ -189,6 +193,7 @@ int main()
 	//int d = (c = a - 2, a = b + c, c - 3);
 	//printf("%d\n", d);
 	//函数标识符（），引用函数；
+	
 //#关键字
 	//1, auto自动被省略 ，auto int a = 10;
 	//2,break,跳出循环
@@ -198,6 +203,88 @@ int main()
 	2：名字必须是字母，数字，下划线组成，不能有特殊字符，同时不能以数字开头；
 	3：不能是关键字；*/
 
+	//五月十一号
+	/*typedef struct Node
+	{
+		int data;
+		struct Node* next;
+	}Node;*/
+	//void test()
+	//{
+	//	//int a = 1; (a每次出函数都被销毁了，又变成1了，所以打印结果全为2，局部变量存储在栈区，)；
+	//	static int a = 1; /*(结果为234567891011，所以static修饰局部变量的时候，局部变量出了作用域，不销毁，
+	//		本质上static改变了变量的存储位置，从变量在栈区到静态区，和程序的生命周期一样);*/
+	//	a++;
+	//	printf("%d\n",a);
+	//}
+	    /*int main()	
+	    {*/
+		/*1:typedef(重命名)*/
+		//typedef unsigned int uint;
+		//uint a = 1;
+		//struct Node b ;
+		//Node b ;
+
+		/*2:static
+		{
+			修饰局部变量；修饰全局变量；修饰函数；
+		}*/
+		//修饰局部变量
+		/*int i = 0;
+		while (i < 10)
+		{
+			test();
+			i++;
+		}*/
+		//ctrl+滚轮，可以直接改变字体大小；
+		// 修饰全局变量
+		//static修饰全局变量的时候，这个全局变量的外部链接属性就变成了内部连接属性，其他源文件(.c)就用不到这个全局变量了
+		//例如extern不能再用被static修饰的全局变量；(全局变量也是存储在静态区)  
+		//修饰函数
+		//和static修饰全局变量一样，修饰函数时，一个函数原本的外部链接属性就变成了内部连接属性
+		//其他源文件(.c)就无法使用了(即extern也没招了);
+
+		//3:register-寄存器
+		//电脑上的存储设备
+		/*{
+			寄存器（集成到cpu上）
+				高速缓存（cache）
+				内存
+				硬盘
+		}（上面的空间小，读取速度快，造价高）
+			寄存器变量
+				register int num = 3;*///建议3放在寄存器中；
+
+		//4:define定义常量和宏；
+		//define定义标识常量
+		//#define NUM 100//(后面不写分号;)
+		//int main()
+		//{
+		//	printf("%d\n", NUM);
+		//	int n = NUM;
+		//	printf("%d\n", n);
+		//	int arr[NUM] = { 0 };
+		//	return 0;
+		//}
+		//define定义宏(来完成替换)，宏是有参数的；
+	/*#define ADD宏名(x,y)宏参数 ((x)+(y))宏体
+	int main()
+	{
+		int a = 10;
+		int b = 20;
+		int c = ADD(a, b);
+		printf("%d\n", c);
+		return 0;
+	}*/
+
+
+
+
+
+
+
+
+	
 
 
 
@@ -208,8 +295,9 @@ int main()
 
 
 
-	return 0;
-}
+
+
+
 
 
 

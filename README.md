@@ -24,3 +24,25 @@ int main() {
     return 0;
 }
 ```
+> 记录与2026念5月11日，刚好学到指针，指针的视频有一个多小时，已经十二点了，明天学。
+
+## 今日学习内容：typedef,static,register,define
+
+### 知识
+小的知识点都在c语言学习那个文件里了，我这里就不再赘述了
+
+### 今日份代码
+也没什么值得写的，就写一个以前不知道的define定义宏来替换吧
+
+```c
+#include <stdio.h>
+#define ADD(x,y) ((x)+(y))
+int main()
+{
+int a=10;
+int b=20;
+int c=ADD(a,b);
+printf("%d\n",c);
+return 0;
+}
+```
