@@ -1,5 +1,17 @@
-# 忽略VS生成的工程垃圾
+# 我的C语言学习仓库 Git 忽略规则
+
+# 忽略所有编译输出文件夹
+[Dd]ebug/
+[Rr]elease/
 x64/
+
+# 忽略VS工程文件
 .vs/
 *.sln
 *.vcxproj*
+*.user
+
+# 忽略编译过程中间文件
+*.ilk
+*.log
+*.recipe
