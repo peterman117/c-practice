@@ -46,3 +46,31 @@ printf("%d\n",c);
 return 0;
 }
 ```
+> 记录于5月12日，今天把初识c语言学完了，明天开始进阶学习了，要继续坚持啊，现在是12；30，今天学了2个小时代码
+
+## 今日学习内容：指针，结构体
+
+### 今日份代码
+
+```c
+#include <stdio.h>
+struct Stu
+{
+char name[20];
+int age;
+char sex[10];
+char tele[12];
+};
+void print(struct Stu* x)
+{
+printf("%s %d %s %s\n",(*x).name,(*x).age,(*x).sex,(*x).tele);
+printf("%s %d %s %s\n",x->name,x->age,x->sex,x->tele);
+}
+int main()
+{
+struct Stu s={"zhangyang",19,"man","19922796930"};
+printf("%s %d %s %s\n",s.name,s.age,s.sex,s.tele);
+print(&s);
+return 0;
+}
+```
