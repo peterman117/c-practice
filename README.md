@@ -74,3 +74,39 @@ print(&s);
 return 0;
 }
 ```
+> 记录于5月13日，星期三，晴，11:40
+
+## 今日学习：if深入学习，switch学习
+而且知道了switch的嵌套使用
+
+### 今日份代码
+
+```c
+int main()
+{
+	int n = 1;
+	int m = 2;
+	switch (n)
+	{
+	case 1:m++;
+	case 2:n++;
+	case 3:
+		switch (n)//switch可以嵌套使用
+		{
+		case 1:
+			n++;
+		case 2:
+			m++; n++;
+			break;
+		}
+	case 4:
+		m++;
+		break;
+	default:
+		break;
+
+	}
+	printf("%d %d", m, n);
+	return 0;
+}
+```
