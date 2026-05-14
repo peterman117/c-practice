@@ -467,6 +467,127 @@ int main()
 //	printf("%d %d", m, n);
 //	return 0;
 //}
+//5月14号
+//1:循环
+//while循环
+ //continue跳过当前循环，直接下次循环；
+//break是用于永久的终止循环;
+/*int main()
+{
+	//while (getchar())
+	 //int ch = getchar();//getchar用来接收字符，输入字符，然后ch得到该字符的ASCLL值
+	//printf("%c\n", ch);//然后printf里面是%c就输出该ACSLL值对应的字符，%d就输出该ACSLL值
+	//putchar(ch);//putchar和getchar是一对，输出对应的字符；
+	return 0;
+}*/
+//错误	LNK1168	无法打开 F:\code\c-practice\x64\Debug\c语言.exe 进行写入
+//上面这个错误表示已经打开了一个可执行程序，只需要关掉就可以；
+//int main()
+//{
+//	int ch = 0;
+//	while ((ch = getchar()) != EOF)//EOF
+//	{
+//		putchar(ch);
+//	}
+//	return 0;
+//}
+//int main()
+//{
+//	char password[20] = { 0 };
+//	printf("请输入密码\n");
+//	scanf("%s", password);//这里数组不用取地址，因为数组本来就是地址
+//	//scanf的特性，遇到空格和\n都停止接受了，所以你输入完密码后会写下一个\n
+//	//但\n会留在键盘缓冲区，然后直接被getchar吃掉给ret，然后就打印NO了
+//	//getchar()//写这个会消除上面的bug，直接吃掉遗留的\n
+//	//但是如果密码里面有空格，或者说不小心打了一个空格，空格和后面的密码都会遗留
+//	//所以说要写个循环让getchar一直吃，直到吃到\n
+//	//int ch = 0;
+//	//while ((ch = getchar()) != '\n')
+//	//{
+//	//	;
+//	//}//这样就可以清空缓冲区了
+//
+//	printf("请确认密码\n");
+//	int ret = getchar();
+//	if ('Y' == ret)
+//		printf("YES");
+//	else
+//		printf("NO");
+//	return 0;
+//}
+//输入ctrl+z结束循环;
+	//int main()
+	//{
+	//	int arr[] = { 73,32,99,110,32,109,116 };
+	//	int se = sizeof(arr) / sizeof(arr[0]);//计算数组里面的个数
+	//	int i = 0;
+	//	while (i < se)
+	//	{
+	//		printf("%c\n", arr[i]);
+	//		i++;
+	//	}
+	//	return 0;
+	//}
+//int main()
+//{
+//	int year = 0;
+//	int month = 0;
+//	int day = 0;
+//	scanf("%4d%2d%2d", &year, &month, &day);
+//	//4d表示取前面的四位，2d表示取两位；
+//	printf("year=%d\n", year);
+//	printf("month=%d\n", month);
+//	printf("day=%2d\n", day);
+//	//如果day只有一位，你写的是%2d，输出的结果会在数字前面补一个空格
+//	//但你写%02d，就会用0在前面补
+//	return 0;
+//}
+//float c=0.0f//如果不写f会默认为double类型，与前面的float不符合
+//输出浮点数的时候，%.2f表示保留两位小数
+//int main()
+//{
+//	int n = printf("Hello world!");//printf的返回值为int,即打印的字符数13,一个汉字代表两个字符;
+//	printf("\n%d\n", n);//在前面加一个\n也能换行
+//	return 0;
+//}
+//int main()
+//{
+//	char password[20] = { 0 };
+//	printf("输入密码\n");
+//	scanf("%s", password);
+//	int ch = 0;
+//	while ((ch = getchar()) != '\n')
+//	{
+//		;
+//	}
+//	printf("检查密码是否正确（Y/N）\n");
+//	int ret = getchar();
+//	if (ret == 'Y')
+//	{
+//		printf("YES");
+//	}
+//	else
+//		printf("NO");
+//	int arr[] = { 23,64,78,106 };
+//	int i = 0;
+//	int se = sizeof(arr) / sizeof(arr[0]);
+//	while (i <=se)
+//	{
+//		printf("%c\n", arr[i]);
+//		i++;
+//	}
+//	int year = 0;
+//	int month = 0;
+//	int day = 0;
+//	printf("输入出生日期\n");
+//	scanf("%4d%2d%2d", &year, &month, &day);
+//	printf("year=%d\n", year);
+//	printf("month=%02d\n", month);
+//	printf("day=%02d\n", day);
+//	return 0;
+//}
+
+
 
 
 

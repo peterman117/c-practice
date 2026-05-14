@@ -110,3 +110,48 @@ int main()
 	return 0;
 }
 ```
+> 5月14日，周四晴，11:23，今天晚上没课，所以早点学，今天学了不少
+
+## 今日学习：把while循环学完了，还学了很多的小知识点
+
+### 今日份代码
+
+```c
+#include <stdio.h>
+int main()
+{
+	char password[20] = { 0 };
+	printf("输入密码\n");
+	scanf("%s", password);
+	int ch = 0;
+	while ((ch = getchar()) != '\n')
+	{
+		;
+	}
+	printf("检查密码是否正确（Y/N）\n");
+	int ret = getchar();
+	if (ret == 'Y')
+	{
+		printf("YES");
+	}
+	else
+		printf("NO");
+	int arr[] = { 23,64,78,106 };
+	int i = 0;
+	int se = sizeof(arr) / sizeof(arr[0]);
+	while (i <=se)
+	{
+		printf("%c\n", arr[i]);
+		i++;
+	}
+	int year = 0;
+	int month = 0;
+	int day = 0;
+	printf("输入出生日期\n");
+	scanf("%4d%2d%2d", &year, &month, &day);
+	printf("year=%d\n", year);
+	printf("month=%02d\n", month);
+	printf("day=%02d\n", day);
+	return 0;
+}
+```
