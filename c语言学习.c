@@ -586,7 +586,90 @@ int main()
 //	printf("day=%02d\n", day);
 //	return 0;
 //}
-
+//5月15号
+//int main()
+//{
+//	printf("printf(\"Hello world!\\n\");\n");
+//	printf("cout<<\"Hello world!\"<< endl;\n");
+//	return 0;
+//}//转义字符
+//找到输入的数中的最大值
+//方法一
+//int main()
+//{
+//	int arr[4] = { 0 };
+//	for (int i = 0; i < 4; i++)
+//	{
+//		scanf("%d", &arr[i]);
+//	}
+//	int max = arr[0];
+//	int j = 1;
+//	while (j < 4)
+//	{
+//		if (arr[j] > max)
+//		{
+//			max = arr[j];
+//		}
+//		j++;
+//	}
+//	printf("%d", max);
+//	return 0;
+//}
+//方法二
+//int main()
+//{
+//	int max = 0;
+//	scanf("%d", &max);
+//	int i = 1;
+//	int n = 0;
+//	while (i < 4)
+//	{
+//		scanf("%d", &n);
+//		if (n > max)
+//		{
+//			max = n;
+//		}
+//		i++;
+//	}
+//	printf("%d", max);
+//	return 0;
+//}//边输入边比较
+int main()
+{
+	printf("printf(\"Hello world!\\n\");\n");
+	printf("cout<<\"Hello world!\"<< endl;\n");//转义字符的知识
+	int arr[4] = { 0 };
+	for (int i = 0; i < 4; i++)
+	{
+		scanf("%d", &arr[i]);
+	}
+	int max = arr[0];
+	int j = 1;
+	while (j < 4)
+	{
+		if (arr[j] > max)
+		{
+			max = arr[j];
+		}
+		j++;
+	}
+	printf("%d\n", max);
+	int max1 = 0;
+	scanf("%d", &max1);
+	int m = 1;
+	int n = 0;
+	while (m < 4)
+	{
+		scanf("%d", &n);
+		if (n > max1)
+		{
+			max1 = n;
+		}
+		m++;
+	}
+	printf("%d\n", max1);
+	return 0;
+}
 
 
 

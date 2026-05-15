@@ -155,3 +155,47 @@ int main()
 	return 0;
 }
 ```
+> 5/16,星期五，小雨，0：43，因为结束了一周的课，比较放松学的比较少
+
+## 今日学习：听了一些题目
+
+### 今日代码
+
+```c
+#include<stdio.h>
+int main()
+{
+	printf("printf(\"Hello world!\\n\");\n");
+	printf("cout<<\"Hello world!\"<< endl;\n");//转义字符的知识
+	int arr[4] = { 0 };
+	for (int i = 0; i < 4; i++)
+	{
+		scanf("%d", &arr[i]);
+	}
+	int max = arr[0];
+	int j = 1;
+	while (j < 4)
+	{
+		if (arr[j] > max)
+		{
+			max = arr[j];
+		}
+		j++;
+	}
+	printf("%d\n", max);
+	int max1 = 0;
+	scanf("%d", &max1);
+	int m = 1;
+	int n = 0;
+	while (m < 4)
+	{
+		scanf("%d", &n);
+		if (n > max1)
+		{
+			max1 = n;
+		}
+		m++;
+	}
+	printf("%d\n", max1);
+	return 0;
+}
